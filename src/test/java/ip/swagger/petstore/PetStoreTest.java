@@ -20,14 +20,17 @@ import javax.ws.rs.core.MediaType;
 @Listeners({AllureTestNg.class})
 public class PetStoreTest  extends BaseTest {
     UserController userController = new UserController();
+    TestRequestContext context;
+    TestRequestContext context_assert;
+    ResponseContext response;
 
     @Story("Create User")
     @Severity(SeverityLevel.CRITICAL)
     @Step("Creating user with ID: {user.id}")
     @Test(description = "Test user creation",dataProvider = "UserData", dataProviderClass = UserData.class)
     public void createUserTest(User user) {
-        TestRequestContext context = new TestRequestContext("POST", MediaType.APPLICATION_JSON,"/user");
-        ResponseContext response = userController.createUser(context,user);
+        context = new TestRequestContext("POST", MediaType.APPLICATION_JSON,"/user");
+        response = userController.createUser(context,user);
         Assert.assertEquals(response.getStatus(), 200);
         User createdUser = (User) response.getEntity();
         String userId = String.valueOf(createdUser.getId());
@@ -36,10 +39,11 @@ public class PetStoreTest  extends BaseTest {
 
     @Story("Read User")
     @Severity(SeverityLevel.CRITICAL)
+    @Step("Reading user with ID: {user.id}")
     @Test(description = "Test user reading",dataProvider = "UserData", dataProviderClass = UserData.class, dependsOnMethods = "createUserTest")
     public void readUserTest(User user) {
-        TestRequestContext context = new TestRequestContext("GET", MediaType.APPLICATION_JSON,String.valueOf(user.getId()));
-        ResponseContext response = userController.getUserByName(context,"user1");
+        context = new TestRequestContext("GET", MediaType.APPLICATION_JSON,String.valueOf(user.getId()));
+        response = userController.getUserByName(context,"user1");
         Assert.assertEquals(response.getStatus(), 200);
         User createdUser = (User) response.getEntity();
         Assert.assertNotNull(String.valueOf(createdUser.getId()));
@@ -47,10 +51,11 @@ public class PetStoreTest  extends BaseTest {
 
     @Story("Update User")
     @Severity(SeverityLevel.CRITICAL)
+    @Step("Updating user with name: {user.name}")
     @Test(description = "Test user updating",dataProvider = "updatedUser", dataProviderClass = UserData.class,dependsOnMethods = "readUserTest")
     public void updateUserTest(String userName, User updatedUser) {
-        TestRequestContext context = new TestRequestContext("PUT", MediaType.APPLICATION_JSON,"/user");
-        ResponseContext response = userController.updateUser(context,userName, updatedUser);
+        context = new TestRequestContext("PUT", MediaType.APPLICATION_JSON,"/user");
+        response = userController.updateUser(context,userName, updatedUser);
         Assert.assertEquals(response.getStatus(), 200);
         User createdUser = (User) response.getEntity();
         Assert.assertEquals(createdUser.getUsername(), updatedUser.getUsername());
@@ -58,13 +63,14 @@ public class PetStoreTest  extends BaseTest {
 
     @Story("Delete User")
     @Severity(SeverityLevel.CRITICAL)
+    @Step("Deleting user with name: {user.name}")
     @Test(description = "Test user deletion",dataProvider = "updatedUser", dataProviderClass = UserData.class, dependsOnMethods = "updateUserTest")
     public void deleteUserTest(String userName, User updatedUser) {
-        TestRequestContext context = new TestRequestContext("DELETE", MediaType.APPLICATION_JSON,String.valueOf(updatedUser.getId()));
-        ResponseContext response = userController.deleteUser(context,userName);
+        context = new TestRequestContext("DELETE", MediaType.APPLICATION_JSON,String.valueOf(updatedUser.getId()));
+        response = userController.deleteUser(context,userName);
         Assert.assertEquals(response.getStatus(), 200);
-        TestRequestContext context2 = new TestRequestContext("GET", MediaType.APPLICATION_JSON,String.valueOf(updatedUser.getId()));
-        ResponseContext verifyResponse = userController.getUserByName(context2,userName);
+        context_assert = new TestRequestContext("GET", MediaType.APPLICATION_JSON,String.valueOf(updatedUser.getId()));
+        ResponseContext verifyResponse = userController.getUserByName(context_assert,userName);
         Assert.assertEquals(verifyResponse.getStatus(), 404);
     }
 }
