@@ -1,0 +1,93 @@
+{
+  "uid" : "6d895cb0d5f18fb",
+  "name" : "Test user creation",
+  "fullName" : "ip.swagger.petstore.PetStoreTest.createUserTest",
+  "historyId" : "77a6108923ff41c890b7b7ffd0af2fda",
+  "time" : {
+    "start" : 1749819163831,
+    "stop" : 1749819163952,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "cleanAllureResults",
+    "time" : {
+      "start" : 1749819163660,
+      "stop" : 1749819163682,
+      "duration" : 22
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ip.swagger.petstore.PetStoreTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ip.swagger.petstore.PetStoreTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createUserTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "ip.swagger.petstore.PetStoreTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-L2HICLU"
+  }, {
+    "name" : "thread",
+    "value" : "12404@DESKTOP-L2HICLU.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Create User"
+  }, {
+    "name" : "feature",
+    "value" : "User CRUD"
+  }, {
+    "name" : "epic",
+    "value" : "User Management"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "io.swagger.petstore.model.User@7dfd3c81"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d895cb0d5f18fb.json",
+  "parameterValues" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+}

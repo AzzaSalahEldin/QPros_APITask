@@ -1,0 +1,41 @@
+[ {
+  "uid" : "be2d0ee6f5284aec",
+  "name" : "Test user reading",
+  "time" : {
+    "start" : 1749819164102,
+    "stop" : 1749819164104,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5fed508bbcb29538",
+  "name" : "Test user deletion",
+  "time" : {
+    "start" : 1749819164130,
+    "stop" : 1749819164134,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6d895cb0d5f18fb",
+  "name" : "Test user creation",
+  "time" : {
+    "start" : 1749819163831,
+    "stop" : 1749819163952,
+    "duration" : 121
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "69aad779a8557c01",
+  "name" : "Test user updating",
+  "time" : {
+    "start" : 1749819164113,
+    "stop" : 1749819164121,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

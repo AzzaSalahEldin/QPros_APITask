@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 13 15:52:44 GMT+03:00 2025","Fri Jun 13 15:52:44 GMT+03:00 2025","2","Surefire suite","Surefire test","ip.swagger.petstore.PetStoreTest","ip.swagger.petstore.PetStoreTest","readUserTest","Test user reading",""
+"passed","Fri Jun 13 15:52:44 GMT+03:00 2025","Fri Jun 13 15:52:44 GMT+03:00 2025","4","Surefire suite","Surefire test","ip.swagger.petstore.PetStoreTest","ip.swagger.petstore.PetStoreTest","deleteUserTest","Test user deletion",""
+"passed","Fri Jun 13 15:52:44 GMT+03:00 2025","Fri Jun 13 15:52:44 GMT+03:00 2025","8","Surefire suite","Surefire test","ip.swagger.petstore.PetStoreTest","ip.swagger.petstore.PetStoreTest","updateUserTest","Test user updating",""
+"passed","Fri Jun 13 15:52:43 GMT+03:00 2025","Fri Jun 13 15:52:43 GMT+03:00 2025","121","Surefire suite","Surefire test","ip.swagger.petstore.PetStoreTest","ip.swagger.petstore.PetStoreTest","createUserTest","Test user creation",""

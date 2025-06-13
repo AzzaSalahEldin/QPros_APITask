@@ -1,0 +1,81 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "User Management",
+    "children" : [ {
+      "name" : "User CRUD",
+      "children" : [ {
+        "name" : "Create User",
+        "children" : [ {
+          "name" : "Test user creation",
+          "uid" : "6d895cb0d5f18fb",
+          "parentUid" : "4ca1f8875a4aca9dd855a33e1b2df42b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819163831,
+            "stop" : 1749819163952,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+        } ],
+        "uid" : "4ca1f8875a4aca9dd855a33e1b2df42b"
+      }, {
+        "name" : "Read User",
+        "children" : [ {
+          "name" : "Test user reading",
+          "uid" : "be2d0ee6f5284aec",
+          "parentUid" : "c4c2a154fb671a78aa5a0af9ccf68444",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164102,
+            "stop" : 1749819164104,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+        } ],
+        "uid" : "c4c2a154fb671a78aa5a0af9ccf68444"
+      }, {
+        "name" : "Update User",
+        "children" : [ {
+          "name" : "Test user updating",
+          "uid" : "69aad779a8557c01",
+          "parentUid" : "b760f5a2951de44bad02b75bd61cb1aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164113,
+            "stop" : 1749819164121,
+            "duration" : 8
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "user1", "io.swagger.petstore.model.User@602e0143" ]
+        } ],
+        "uid" : "b760f5a2951de44bad02b75bd61cb1aa"
+      }, {
+        "name" : "Delete User",
+        "children" : [ {
+          "name" : "Test user deletion",
+          "uid" : "5fed508bbcb29538",
+          "parentUid" : "e868059bc1896f1d6fa685026894e5f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164130,
+            "stop" : 1749819164134,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "user1", "io.swagger.petstore.model.User@524f3b3a" ]
+        } ],
+        "uid" : "e868059bc1896f1d6fa685026894e5f2"
+      } ],
+      "uid" : "fec8b3b57965179aa1e32b53cfa503dd"
+    } ],
+    "uid" : "cf80ae54266b20121713418dc0893786"
+  } ]
+}

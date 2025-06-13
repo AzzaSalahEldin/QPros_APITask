@@ -1,0 +1,5 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"User Management","User CRUD","Read User","0","0","1","0","0"
+"User Management","User CRUD","Delete User","0","0","1","0","0"
+"User Management","User CRUD","Update User","0","0","1","0","0"
+"User Management","User CRUD","Create User","0","0","1","0","0"

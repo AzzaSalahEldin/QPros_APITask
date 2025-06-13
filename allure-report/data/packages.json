@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "ip.swagger.petstore.PetStoreTest",
+    "children" : [ {
+      "name" : "createUserTest",
+      "uid" : "6d895cb0d5f18fb",
+      "parentUid" : "3c1d709aaa87cc5513ae9f2b545cd224",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749819163831,
+        "stop" : 1749819163952,
+        "duration" : 121
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+    }, {
+      "name" : "readUserTest",
+      "uid" : "be2d0ee6f5284aec",
+      "parentUid" : "3c1d709aaa87cc5513ae9f2b545cd224",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749819164102,
+        "stop" : 1749819164104,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+    }, {
+      "name" : "updateUserTest",
+      "uid" : "69aad779a8557c01",
+      "parentUid" : "3c1d709aaa87cc5513ae9f2b545cd224",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749819164113,
+        "stop" : 1749819164121,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "user1", "io.swagger.petstore.model.User@602e0143" ]
+    }, {
+      "name" : "deleteUserTest",
+      "uid" : "5fed508bbcb29538",
+      "parentUid" : "3c1d709aaa87cc5513ae9f2b545cd224",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749819164130,
+        "stop" : 1749819164134,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "user1", "io.swagger.petstore.model.User@524f3b3a" ]
+    } ],
+    "uid" : "ip.swagger.petstore.PetStoreTest"
+  } ]
+}

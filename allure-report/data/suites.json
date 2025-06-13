@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Surefire suite",
+    "children" : [ {
+      "name" : "Surefire test",
+      "children" : [ {
+        "name" : "ip.swagger.petstore.PetStoreTest",
+        "children" : [ {
+          "name" : "Test user creation",
+          "uid" : "6d895cb0d5f18fb",
+          "parentUid" : "c798a5760c5d56f68a047136dd167750",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819163831,
+            "stop" : 1749819163952,
+            "duration" : 121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+        }, {
+          "name" : "Test user reading",
+          "uid" : "be2d0ee6f5284aec",
+          "parentUid" : "c798a5760c5d56f68a047136dd167750",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164102,
+            "stop" : 1749819164104,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "io.swagger.petstore.model.User@7dfd3c81" ]
+        }, {
+          "name" : "Test user updating",
+          "uid" : "69aad779a8557c01",
+          "parentUid" : "c798a5760c5d56f68a047136dd167750",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164113,
+            "stop" : 1749819164121,
+            "duration" : 8
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "user1", "io.swagger.petstore.model.User@602e0143" ]
+        }, {
+          "name" : "Test user deletion",
+          "uid" : "5fed508bbcb29538",
+          "parentUid" : "c798a5760c5d56f68a047136dd167750",
+          "status" : "passed",
+          "time" : {
+            "start" : 1749819164130,
+            "stop" : 1749819164134,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "user1", "io.swagger.petstore.model.User@524f3b3a" ]
+        } ],
+        "uid" : "c798a5760c5d56f68a047136dd167750"
+      } ],
+      "uid" : "1fcb2e6ec8e5b5e8a1f2a70b87c80b24"
+    } ],
+    "uid" : "940a09faf31371a51747026c9d178f0a"
+  } ]
+}
